@@ -1,0 +1,82 @@
+.container-fill,
+.second-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+:root {
+    --font-size: 2rem;
+    --height: 35px;
+}
+
+.container-fill {
+    width: 55%;
+}
+
+.container-nav {
+    text-align: center;
+    font-size: var(--font-size);
+    border: 1px solid var(--color-line);
+    border-radius: 15px;
+    height: var(--height);
+    line-height: var(--height);
+    color: var(--color-text);
+    padding: 0 10px;
+    &:hover {
+        cursor: pointer;
+        color: var(--organ-color) ;
+        border-color: var(--organ-color);
+    }
+
+    &:active {
+        color: var(--organ-color) ;
+        border-color: var(--organ-color);
+    }
+
+    .down {
+        margin-left: 7px;
+    }
+
+}
+
+.search {
+    color: var(--color-text);
+    font-size: var(--font-size);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    border: 1px solid var(--color-line);
+    border-radius: 15px;
+    .icon-search {
+        margin-right: 1.5px;
+        width: 140px;
+        height: calc(var(--height) - 3px);
+        line-height: calc(var(--height) - 3px);
+        border: 1px solid var(--color-text);
+        border-radius: 20px;
+        color: #fff;
+        text-align: center;
+        background-color: var(--organ-color);
+
+        .icon {
+            width: 15px;
+            margin-right: 5px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .text {
+        margin-left: 5px;
+        width: 215px;
+        height: 100%;
+        border: none;
+        border-radius: 15px;
+        outline: none;
+        font-size: 1.4rem;
+    }
+
+}
